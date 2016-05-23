@@ -1,9 +1,12 @@
 require 'test_helper'
 
 class BooksControllerTest < ActionController::TestCase
-test "should redirect index when not logged in" do
-    get :index
-    assert_redirected_to login_url
+  def setup
+    @user = users(:michael)    
   end
 
+  test "should redirect index when not logged in" do
+    get :index
+    assert_redirected_to root_path
+  end
 end

@@ -179,3 +179,13 @@ input {
     color: $state-danger-text;
   }
 }
+
+/*Book Index*/
+.table {
+  margin: auto;
+  width: 75%;
+}
+
+.book-name, .available, .total {
+  text-align: center
+}
