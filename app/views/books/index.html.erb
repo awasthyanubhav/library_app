@@ -1,0 +1,21 @@
+<h1>Book Listing</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th class = 'book-name'>Book</th>
+      <th class = 'available'>Available Copies</th>
+      <th class = 'total'>Total Copies</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td class = 'book-name'><%= book.book_name %></td>
+        <td class = 'available'><%= book.available_copies %></td>
+        <td class = 'total'><%= book.total_copies %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
